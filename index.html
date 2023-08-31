@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikathi Martin</title>
+    
+    
+    <!-- links to external files -->
+    <link rel="stylesheet" href="/assets/output.css">
+</head>
+<body>
+    <nav class="bg-red-500 sticky top-0 overflow-hidden text-center transition-all duration-300 z-10 ease-in-out" id="navbar">
+        <h1 class="font-josefin" id="name">Bikathi Martin</h1>
+        <h2 class="font-josefin" id="tagline">I am a feature, not a bug ❤</h2>
+    </nav>
+    <main class="bg-[#561786] py-2 px-2 flex justify-center">
+        <h1>Hello world</h1>
+    </main>
+    <!-- in-file Javascript -->
+    <script lang="js">
+        // for resizing the navbar
+        window.onscroll = function() {resizeNavbar();}
+
+        function resizeNavbar() {
+            if(document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80) {
+                document.getElementById("navbar").style.padding = "30px 0px";
+                document.getElementById("name").style.fontSize = "30px";
+                document.getElementById("tagline").style.fontSize = "15px";
+            } else {
+                document.getElementById("navbar").style.padding = "60px 0px";
+                document.getElementById("name").style.fontSize = "35px";
+                document.getElementById("tagline").style.fontSize = "20px";
+            }
+        }
+    </script>
+</body>
+</html>
