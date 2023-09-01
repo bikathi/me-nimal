@@ -51,7 +51,7 @@ function renderEducationObjects() {
 		imageDiv.classList.add(
 			"h-72",
 			"w-full",
-			"bg-[url('/img/academic.jpg')]",
+			"bg-[url('/img/books.jpg')]",
 			"bg-fit",
 			"rounded-t-md"
 		);
