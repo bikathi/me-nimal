@@ -22,55 +22,50 @@ const myEducation = [
 function renderEducationObjects() {
 	const container = document.getElementById("education");
 
-	myEducation.map((data, index) => {
+	myEducation.map((data) => {
 		let div = document.createElement("div");
-		let imageDiv = document.createElement("div");
+		let img = document.createElement("img");
 		let contentDiv = document.createElement("div");
 		let h1 = document.createElement("h1");
 		let h2 = document.createElement("h2");
-		let h3 = document.createElement("h3");
 		let p = document.createElement("p");
 
 		h1.textContent = data.school;
 		h2.textContent = `${data.tag} | ${data.duration}`;
-		h3.textContent = data.duration;
 		p.textContent = data.description;
+
+		// for the image
+		img.setAttribute("src", "/img/books.jpg");
 
 		// Tailwind styles
 		div.classList.add(
 			"rounded-md",
 			"shadow-md",
-			"h-[26rem]",
+			"h-[430px]",
 			"flex",
 			"flex-col",
 			"transition-all",
 			"hover:scale-102",
 			"ease-in-out",
-			"duration-200"
+			"duration-200",
+			"bg-[#401164]"
 		);
-		imageDiv.classList.add(
-			"h-72",
-			"w-full",
-			"bg-[url('/img/books.jpg')]",
-			"bg-fit",
-			"rounded-t-md"
-		);
+		img.classList.add("h-72", "w-full", "rounded-t-md");
 		contentDiv.classList.add(
 			"p-2",
-			"bg-[#401164]",
 			"text-white",
 			"flex-grow",
 			"rounded-b-md",
 			"font-poppins",
-			"space-y-1"
+			"space-y-1",
+			"bg-[#561786]"
 		);
 		h1.classList.add("font-inter", "text-2xl");
 
-		div.appendChild(imageDiv);
+		div.appendChild(img);
 		div.appendChild(contentDiv);
 		contentDiv.appendChild(h1);
 		contentDiv.appendChild(h2);
-		contentDiv.appendChild(h3);
 		contentDiv.appendChild(p);
 
 		container.appendChild(div);
