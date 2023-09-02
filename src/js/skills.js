@@ -49,7 +49,6 @@ function renderLanguageSkills() {
 
 		// styles
 		div.classList.add(
-			"bg-red-500",
 			"p-2",
 			"rounded-md",
 			"h-16",
@@ -83,7 +82,6 @@ function renderToolsSkills() {
 
 		// styles
 		div.classList.add(
-			"bg-red-500",
 			"p-2",
 			"rounded-md",
 			"h-16",
