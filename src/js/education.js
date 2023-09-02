@@ -41,24 +41,23 @@ function renderEducationObjects() {
 		div.classList.add(
 			"rounded-md",
 			"shadow-md",
-			"h-[430px]",
+			"h-fit",
 			"flex",
 			"flex-col",
 			"transition-all",
 			"hover:scale-102",
 			"ease-in-out",
 			"duration-200",
-			"bg-[#401164]"
+			"bg-[#561786]"
 		);
-		img.classList.add("h-72", "w-full", "rounded-t-md");
+		img.classList.add("h-72", "w-full", "rounded-md");
 		contentDiv.classList.add(
 			"p-2",
 			"text-white",
 			"flex-grow",
 			"rounded-b-md",
 			"font-poppins",
-			"space-y-1",
-			"bg-[#561786]"
+			"space-y-1"
 		);
 		h1.classList.add("font-inter", "text-2xl");
 
