@@ -11,6 +11,36 @@
 
     <!-- Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .flip-card {
+            background-color: transparent;
+            /* perspective: 1000px; */
+        }
+
+        .flip-card-inner {
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+
+        .flip-card-front {
+            background-color: #561786;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 <body>
     <nav class="bg-[#561786] sticky top-0 overflow-hidden text-center transition-all duration-300 z-10 ease-in-out text-white" id="navbar">
@@ -39,6 +69,47 @@
             <!-- Frameworks I know -->
             <h2 class="font-inter text-2xl my-2">Tools</h2>
             <div id="tools" class="flex p-2 justify-evenly items-center my-2"></div>
+        </div>
+        <div class="w-[98%] md:w-[90%] lg:w-[75%] my-4">
+            <h1 class="font-inter text-4xl my-4">Experience</h1>
+            <div class="flex flex-col lg:flex-row space-y-2 lg:space-y-0 justify-center lg:space-x-2">
+                <div class="flip-card w-full lg:w-[500px] h-[300px]">
+                    <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-500 shadow-md">
+                        <div class="flip-card-front w-full text-white h-full flex flex-col absolute items-center justify-center flex-nowrap">
+                            <h1 class="font-josefin text-2xl">StoneAgeTechnologies</h1>
+                            <h2 class="font-poppins">Sept 2022 - Present</h2d>
+                            <h2 class="font-poppins">Riga, Latvia</h2>
+                            <h3 class="font-poppins">Remote</h3>
+                            <span class="absolute top-2 right-2 p-1 text-sm rounded-full bg-slate-100/50 border">
+                                click or hover
+                            </span>
+                        </div>
+                        <div class="flip-card-back w-full h-full flex flex-col absolute items-center justify-center flex-nowrap">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card w-full h-[300px]">
+                    <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-500 shadow-md">
+                        <div class="flip-card-front w-full text-white h-full flex flex-col absolute items-center justify-center">
+                            <h1 class="font-josefin text-2xl">Esheria</h1>
+                            <h2 class="font-poppins">Mar 2023 - Present</h2d>
+                            <h2 class="font-poppins">Nairobi, Kenya</h2>
+                            <h3 class="font-poppins">Remote</h3>
+                            <span class="absolute top-2 right-2 p-1 text-sm rounded-full bg-slate-100/50 border">
+                                click or hover
+                            </span>
+                        </div>
+                        <div class="flip-card-back w-full h-full flex flex-col absolute items-center justify-center flex-nowrap">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="flex flex-col bg-[#561786] w-full py-4 space-y-2 h-fit justify-between items-center">
             <h1 class="font-inter text-white text-2xl">Contact Me</h1>
