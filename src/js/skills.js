@@ -50,7 +50,6 @@ function renderLanguageSkills() {
 		// styles
 		div.classList.add(
 			"p-2",
-			"rounded-md",
 			"h-16",
 			"flex",
 			"flex-col",
@@ -83,7 +82,6 @@ function renderToolsSkills() {
 		// styles
 		div.classList.add(
 			"p-2",
-			"rounded-md",
 			"h-16",
 			"flex",
 			"flex-col",
