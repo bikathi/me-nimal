@@ -1,37 +1,37 @@
 const languages = [
 	{
-		icon: "../../img/svg/java.svg",
+		icon: "img/svg/java.svg",
 		name: "Java",
 	},
 	{
-		icon: "../../img/svg/javascript-logo.svg",
+		icon: "img/svg/javascript-logo.svg",
 		name: "Javascript",
 	},
 	{
-		icon: "../../img/svg/w3-html.svg",
+		icon: "img/svg/w3-html.svg",
 		name: "HTML5",
 	},
 	{
-		icon: "../../img/svg/w3-css.svg",
+		icon: "img/svg/w3-css.svg",
 		name: "CSS3",
 	},
 ];
 
 const tools = [
 	{
-		icon: "../../img/svg/spring.svg",
+		icon: "img/svg/spring.svg",
 		name: "Spring",
 	},
 	{
-		icon: "../../img/svg/vuejs.svg",
+		icon: "img/svg/vuejs.svg",
 		name: "VueJS",
 	},
 	{
-		icon: "../../img/svg/nuxtjs.svg",
+		icon: "img/svg/nuxtjs.svg",
 		name: "NuxtJS",
 	},
 	{
-		icon: "../../img/svg/tailwindcss.svg",
+		icon: "img/svg/tailwindcss.svg",
 		name: "Tailwind",
 	},
 ];

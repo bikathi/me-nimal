@@ -35,7 +35,7 @@ function renderEducationObjects() {
 		p.textContent = data.description;
 
 		// for the image
-		img.setAttribute("src", "/img/books.jpg");
+		img.setAttribute("src", "img/books.jpg");
 
 		// Tailwind styles
 		div.classList.add(
