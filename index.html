@@ -27,6 +27,31 @@
 			integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"></script>
+
+		<style>
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			.fade-in {
+				animation: fadeIn 1s;
+			}
+			.fade-out {
+				animation: fadeOut 1s;
+			}
+		</style>
 	</head>
 
 	<body class="bg-gray-100">
@@ -34,7 +59,8 @@
 			<div class="container max-w-screen-xl mx-auto px-4">
 				<nav class="flex items-center justify-between mb-40">
 					<h1
-						class="font-medium text-gray-600 text-lg md:text-2xl uppercase">
+						class="font-medium text-gray-600 text-lg md:text-2xl uppercase"
+						id="greeting">
 						Welcome
 					</h1>
 					<a
@@ -433,7 +459,7 @@
 
 						<p class="font-normal text-gray-500 text-md mb-4">
 							Underwent my bachelor's degree program <br />
-							at the <strong>KCA University</strong>, completing
+							at the <strong>KCA University</strong>, graduating
 							with a Second Class Honours, Upper Division <br />
 							in Software Development.
 						</p>
@@ -462,7 +488,7 @@
 					</h1>
 
 					<p class="font-medium text-gray-700 text-xs md:text-base">
-						In my many years of experience, I have used @spring for
+						In my 3 years of experience, I have used @spring for
 						backend projects and <br />
 						@vuejs for front-end projects. My passion, however,
 						<br />
@@ -489,6 +515,13 @@
 							class="font-medium text-gray-400 text-base uppercase">
 							Company
 						</h6>
+
+						<p class="font-semibold text-gray-600 text-base">
+							Stone Age Technologies
+							<span class="font-normal text-gray-300"
+								>/ Singapore</span
+							>
+						</p>
 
 						<p class="font-semibold text-gray-600 text-base">
 							Stone Age Technologies
@@ -527,6 +560,10 @@
 						</p>
 
 						<p class="font-normal text-gray-400 text-base">
+							Junior fullstack developer
+						</p>
+
+						<p class="font-normal text-gray-400 text-base">
 							Fullstack developer
 						</p>
 					</div>
@@ -538,6 +575,8 @@
 						</h6>
 
 						<p class="font-normal text-gray-400 text-base">2022</p>
+
+						<p class="font-normal text-gray-400 text-base">2023</p>
 
 						<p class="font-normal text-gray-400 text-base">2023</p>
 
@@ -602,6 +641,29 @@
 
 		<script>
 			feather.replace();
+
+			const greetings = [
+				"Hello World",
+				"Bonjour le monde",
+				"Hola Mundo",
+				"Hallo Welt",
+			];
+			let index = 0;
+
+			function changeGreeting() {
+				const greetingElement = document.getElementById("greeting");
+				greetingElement.classList.remove("fade-in");
+				greetingElement.classList.add("fade-out");
+				setTimeout(() => {
+					greetingElement.textContent = greetings[index];
+					greetingElement.classList.remove("fade-out");
+					greetingElement.classList.add("fade-in");
+					index = (index + 1) % greetings.length;
+				}, 1000);
+			}
+
+			changeGreeting();
+			setInterval(changeGreeting, 3000);
 		</script>
 	</body>
 </html>
