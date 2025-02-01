@@ -13,12 +13,6 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
 
-            - name: Start SSH Agent and Add Key
-              run: |
-                  eval $(ssh-agent -s)
-                  echo "${{ secrets.VPS_PRIV_KEY }}" | tr -d '\r' | ssh-add -
-              shell: bash
-
             - name: Copy files to VPS
               uses: appleboy/scp-action@master
               with:
