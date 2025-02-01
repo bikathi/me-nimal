@@ -36,13 +36,3 @@ jobs:
                       docker run -d -p 5100:80 me-nimal:v1
                       cd ~
                       rm -rf ~/my-site
-
-            - name: Run remote commands
-              uses: appleboy/ssh-action@master
-              with:
-                  host: ${{ secrets.HOST_IP_ADDRESS }}
-                  username: ${{ secrets.VPS_USERNAME }}
-                  port: 22
-                  key: ${{ secrets.SSHKEY }}
-                  script: |
-                      echo "Deployment complete!"
