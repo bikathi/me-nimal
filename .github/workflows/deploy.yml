@@ -33,6 +33,6 @@ jobs:
                   script: |
                       cd ~/my-site
                       docker build -t me-nimal:v1 .
-                      docker run -d -p 5100:80 me-nimal:v1
+                      docker run -d -p 5100:80 me-nimal:v1 --restart unless-stopped
                       cd ~
                       rm -rf ~/my-site
