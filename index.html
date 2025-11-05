@@ -1,603 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Bikathi Martin-Me</title>
-	<link rel="stylesheet" href="assets/css/tailwind.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-		rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
-		integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-	<style>
-		@keyframes fadeIn {
-			0% {
-				opacity: 0;
-			}
-
-			100% {
-				opacity: 1;
-			}
-		}
-
-		@keyframes fadeOut {
-			0% {
-				opacity: 1;
-			}
-
-			100% {
-				opacity: 0;
-			}
-		}
-
-		.fade-in {
-			animation: fadeIn 1s;
-		}
-
-		.fade-out {
-			animation: fadeOut 1s;
-		}
-	</style>
-</head>
-
-<body class="bg-gray-100">
-	<section class="py-10 md:py-16">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<nav class="flex items-center justify-between mb-40">
-				<h1 class="font-medium text-gray-600 text-lg md:text-2xl uppercase" id="greeting">
-					Welcome
-				</h1>
-				<a href="https://drive.google.com/uc?export=download&id=1f-wCLh9xpLL5Dvp_hW5wo89MfPGUVuv3"
-					class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Get
-					my CV</a>
-			</nav>
-
-			<div class="text-center">
-				<div class="flex justify-center mb-16">
-					<img src="assets/image/home-img.jpg" alt="Image" class="h-64 w-64 object-cover rounded-full" />
-				</div>
-
-				<h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">
-					Bikathi Martin
-				</h6>
-
-				<h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">
-					Junior Fullstack Developer
-				</h1>
-				<h1 class="font-normal text-gray-900 text-4xl leading-none mb-8">
-					Entry Level Systems Programmer
-				</h1>
-
-				<p class="font-normal text-gray-600 text-md md:text-xl mb-16">
-					I have a passion for software. I enjoy creating fun
-					tools that make life easier for people.
-				</p>
-
-				<!-- <a href="#" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Hire me</a> -->
-			</div>
-		</div>
-	</section>
-
-	<section class="py-10">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-				About Me
-			</h1>
-
-			<p class="font-normal text-gray-500 text-xs md:text-base mb-20">
-				Here's what might interest you about me:
-			</p>
-
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-				<div class="bg-gray-50 px-8 py-10 rounded-md">
-					<div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
-						<i data-feather="terminal"></i>
-					</div>
-
-					<h4 class="font-medium text-gray-700 text-lg mb-4">
-						Programming Languages
-					</h4>
-
-					<p class="font-normal text-gray-500 text-md">
-						My language of choice is Java for my backends <br />
-						and Javascript for my frontends. Frameworks <br />
-						used include VueJS, NuxtJS and Spring Boot.
-					</p>
-				</div>
-
-				<div class="bg-gray-50 px-8 py-10 rounded-md">
-					<div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
-						<i data-feather="coffee"></i>
-					</div>
-
-					<h4 class="font-medium text-gray-700 text-lg mb-4">
-						Hobbies & Interests
-					</h4>
-
-					<p class="font-normal text-gray-500 text-md">
-						I like watching movies and documentaries.<br />
-						I have an interest in aviation which fuels my
-						<br />growing love for low-level sys programming.
-					</p>
-				</div>
-
-				<div class="bg-gray-50 px-8 py-10 rounded-md">
-					<div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
-						<i data-feather="bar-chart-2"></i>
-					</div>
-
-					<h4 class="font-medium text-gray-700 text-lg mb-4">
-						Aspirations
-					</h4>
-
-					<p class="font-normal text-gray-500 text-md">
-						To bring value to the world and to you
-						<br />with my skills, and share knowledge <br />
-						and ideas with people of similar interest.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-10 md:py-16">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<div class="flex flex-col lg:flex-row justify-between">
-				<div class="mb-10 lg:mb-0">
-					<h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-						Portfolio
-					</h1>
-
-					<p class="font-normal text-gray-500 text-xs md:text-base">
-						I have brought here some of my works
-						<br />
-						created in my free time.
-					</p>
-				</div>
-
-				<div class="space-y-24">
-					<div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
-						<h1 class="font-normal text-gray-700 text-3xl md:text-4xl">
-							01
-						</h1>
-
-						<span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-						<div>
-							<h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-								Custom URL Shortenner
-							</h1>
-
-							<p class="font-normal text-gray-500 text-sm md:text-base">
-								Using a mix of Java and Vue, I created
-								<strong>Litt.le</strong> <br />
-								which is a simple URL shortener that works
-								on <br />
-								your own pc or server.
-							</p>
-						</div>
-					</div>
-
-					<div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
-						<h1 class="font-normal text-gray-700 text-3xl md:text-4xl">
-							02
-						</h1>
-
-						<span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-						<div>
-							<h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-								Typing Tutor
-							</h1>
-
-							<p class="font-normal text-gray-500 text-sm md:text-base">
-								An incredibly minimalistic typing tutor to
-								help you <br />
-								improve your typing skills from right inside
-								your browser.
-							</p>
-						</div>
-					</div>
-
-					<div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
-						<h1 class="font-normal text-gray-700 text-3xl md:text-4xl">
-							03
-						</h1>
-
-						<span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-						<div>
-							<h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-								AOMS
-							</h1>
-
-							<p class="font-normal text-gray-500 text-sm md:text-base">
-								A complex
-								<strong>Animal Orphanage Management
-									System</strong>
-								<br />
-								that utilizes Vue for the UI and SPring Boot
-								for the <br />
-								server-side.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="py-10 md:py-16">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<div class="flex flex-col lg:flex-row justify-between">
-				<div class="mb-10 lg:mb-0">
-					<h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-						Commercial Works
-					</h1>
-
-					<p class="font-normal text-gray-500 text-xs md:text-base">
-						I have brought here my biggest and favorite works
-						<br />
-						as a professional.
-					</p>
-				</div>
-
-				<div class="space-y-24">
-					<div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
-						<h1 class="font-normal text-gray-700 text-3xl md:text-4xl">
-							01
-						</h1>
-
-						<span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-						<div>
-							<h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-								Esheria AI Chat
-							</h1>
-
-							<p class="font-normal text-gray-500 text-sm md:text-base">
-								I was involved in the development of an AI
-								platform <br />
-								to help legal practitioners have a simpler
-								work life. <br />
-								Available at
-								<a href="https://chat.esheria.co.ke/" target="_blank" rel="noopener noreferrer"
-									class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300">https://chat.esheria.co.ke/</a>
-							</p>
-						</div>
-					</div>
-
-					<div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
-						<h1 class="font-normal text-gray-700 text-3xl md:text-4xl">
-							02
-						</h1>
-
-						<span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-						<div>
-							<h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-								AVA Roadside Assistance
-							</h1>
-
-							<p class="font-normal text-gray-500 text-sm md:text-base">
-								AVA is a complex roadside assistance
-								platfrom to help <br />
-								bridge the gap between clients and services
-								like towing, <br />
-								fuel delivery, jumpstarting e.t.c. Get the
-								<a href="https://play.google.com/store/apps/details?id=com.regenttracking.ava"
-									target="_blank" rel="noopener noreferrer"
-									class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300">Playstore
-									App</a>.
-							</p>
-						</div>
-					</div>
-
-					<div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
-						<h1 class="font-normal text-gray-700 text-3xl md:text-4xl">
-							03
-						</h1>
-
-						<span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
-
-						<div>
-							<h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-								Vehicle Valuation System
-							</h1>
-
-							<p class="font-normal text-gray-500 text-sm md:text-base">
-								An complex, AI-charged platform to help with
-								the <br />
-								process of determining a vehicles value,
-								from <br />
-								booking to report.
-								<a href="#" target="_blank" rel="noopener noreferrer"
-									class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300">See
-									the Gallery</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-10 md:py-16">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-				Education
-			</h1>
-
-			<p class="font-normal text-gray-500 text-xs md:text-base mb-20">
-				Below is a summary of the places I studied
-			</p>
-
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-				<div class="bg-gray-50 px-8 py-10 rounded-md">
-					<h4 class="font-medium text-gray-700 text-lg mb-4">
-						2006 - 2015
-					</h4>
-
-					<p class="font-normal text-gray-500 text-md mb-4">
-						Primary school education in Kenya, <br />
-						studied at <strong>Infill Academy</strong> and
-						managed <br />
-						to graduate with 389/<sup>500</sup> points in the
-						<br />
-						K.C.P.E exams.
-					</p>
-
-					<div class="relative">
-						<a href="https://www.facebook.com/www.infillacademy.ac.ke/" target="_blank" rel="noopener"
-							class="font-semibold text-gray-500 text-md relative z-10">
-							See the place here
-						</a>
-						<span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-					</div>
-				</div>
-
-				<div class="bg-gray-50 px-8 py-10 rounded-md">
-					<h4 class="font-medium text-gray-700 text-lg mb-4">
-						2016 - 2020
-					</h4>
-
-					<p class="font-normal text-gray-500 text-md mb-4">
-						High school education in Kenya, studied in<br />
-						<strong>Kakamega National School (G.A.S.K)</strong>
-						<br />eventually graduating with an A- in the <br />
-						K.C.S.E exams.
-					</p>
-
-					<div class="relative">
-						<a href="https://sites.google.com/view/kakamegahighschool/this-is-g-a-s-k-welcome?authuser=0"
-							target="_blank" rel="noopener" class="font-semibold text-gray-500 text-md relative z-10">
-							See the place here
-						</a>
-						<span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-					</div>
-				</div>
-
-				<div class="bg-gray-50 px-8 py-10 rounded-md">
-					<h4 class="font-medium text-gray-700 text-lg mb-4">
-						2020-2024
-					</h4>
-
-					<p class="font-normal text-gray-500 text-md mb-4">
-						Underwent my bachelor's degree program <br />
-						at the <strong>KCA University</strong>, graduating
-						with a Second Class Honours, Upper Division <br />
-						in Software Development.
-					</p>
-
-					<div class="relative">
-						<a href="https://www.kcau.ac.ke/" ref="noopener"
-							class="font-semibold text-gray-500 text-md relative z-10">
-							See the place here
-						</a>
-						<span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-10 md:py-16">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-				Professional Certifications
-			</h1>
-
-			<p class="font-normal text-gray-500 text-xs md:text-base mb-20">
-				Below is a summary of certificates gained / being worked on
-			</p>
-
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-				<div class="bg-gray-50 px-8 py-10 rounded-md">
-					<h4 class="font-medium text-gray-700 text-lg mb-4">
-						Spring Security Certification
-					</h4>
-					<p class="font-normal text-gray-500 text-md mb-4">
-						A <strong>Udemy-based</strong> course on managing
-						backend<br />
-						system security in Spring. Learnt concepts like
-						<br />
-						JWT, OAuth 2.0, SSO, and more.
-					</p>
-
-					<div class="flex items-center space-x-2">
-						<span class="text-gray-700"><strong>Ongoing</strong></span>
-						<span class="text-gray-300">&VerticalBar;</span>
-						<a href="#" target="_blank" rel="noopener"
-							class="font-semibold text-gray-500 text-md relative z-10">
-							Download Certificate
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-10 md:py-16">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<div class="text-center">
-				<h1 class="font-normal text-gray-300 text-3xl md:text-6xl lg:text-7xl mb-20 md:mb-32 lg:mb-48">
-					Press on. At times, press play!
-				</h1>
-
-				<p class="font-medium text-gray-700 text-xs md:text-base">
-					In my 3 years of experience, I have used @spring for
-					backend projects and <br />
-					@vuejs for front-end projects. My passion, however,
-					<br />
-					is leading me towards low-level systems and systems
-					programming with @rust
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-10 md:py-16">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-				Work Experience
-			</h1>
-
-			<p class="font-normal text-gray-500 text-xs md:text-base mb-20">
-				Below is a summary of the places I have worked at
-			</p>
-
-			<div class="flex flex-col lg:flex-row justify-between">
-				<div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
-					<h6 class="font-medium text-gray-400 text-base uppercase">
-						Company
-					</h6>
-
-					<p class="font-semibold text-gray-600 text-base">
-						Stone Age Technologies
-						<span class="font-normal text-gray-300">/ Singapore</span>
-					</p>
-
-					<p class="font-semibold text-gray-600 text-base">
-						Stone Age Technologies
-						<span class="font-normal text-gray-300">/ Singapore</span>
-					</p>
-
-					<p class="font-semibold text-gray-600 text-base">
-						Esheria LTD
-						<span class="font-normal text-gray-300">/ Kenya</span>
-					</p>
-
-					<p class="font-semibold text-gray-600 text-base">
-						Regent AutoValuers & Assessors
-						<span class="font-normal text-gray-300">/ Kenya</span>
-					</p>
-				</div>
-
-				<div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
-					<h6 class="font-medium text-gray-400 text-base uppercase">
-						Position
-					</h6>
-
-					<p class="font-normal text-gray-400 text-base">
-						Intern fullstack developer
-					</p>
-
-					<p class="font-normal text-gray-400 text-base">
-						Junior fullstack developer
-					</p>
-
-					<p class="font-normal text-gray-400 text-base">
-						Junior fullstack developer
-					</p>
-
-					<p class="font-normal text-gray-400 text-base">
-						Fullstack developer
-					</p>
-				</div>
-
-				<div class="space-y-8 md:space-y-16">
-					<h6 class="font-medium text-gray-400 text-base uppercase">
-						Year
-					</h6>
-
-					<p class="font-normal text-gray-400 text-base">2022</p>
-
-					<p class="font-normal text-gray-400 text-base">2023</p>
-
-					<p class="font-normal text-gray-400 text-base">2023</p>
-
-					<p class="font-normal text-gray-400 text-base">2024</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="py-10 md:py-16 mb-20 md:mb-40 lg::mb-52">
-		<div class="container max-w-screen-xl mx-auto px-4">
-			<div class="text-center">
-				<div class="flex items-center justify-center space-x-8">
-					<a href="mailto:martbikathi@gmail.com"
-						class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-						<i data-feather="at-sign"
-							class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-					</a>
-
-					<a href="https://www.linkedin.com/in/bikathi-martin-665a42261" target="_blank" rel="noopener"
-						class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-						<i data-feather="linkedin"
-							class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-					</a>
-					<a href="https://stackoverflow.com/users/21213520/bikathi-martin" target="_blank" rel="noopener"
-						class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-						<i data-feather="layers"
-							class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-					</a>
-					<a href="https://medium.com/@martbikathi" target="_blank" rel="noopener"
-						class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-						<i data-feather="book-open"
-							class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-					</a>
-					<a href="https://github.com/bikathi" target="_blank" rel="noopener"
-						class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-						<i data-feather="github"
-							class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<script>
-		feather.replace();
-
-		const greetings = [
-			"Hello World",
-			"Bonjour le monde",
-			"Hola Mundo",
-			"Hallo Welt",
-		];
-		let index = 0;
-
-		function changeGreeting() {
-			const greetingElement = document.getElementById("greeting");
-			greetingElement.classList.remove("fade-in");
-			greetingElement.classList.add("fade-out");
-			setTimeout(() => {
-				greetingElement.textContent = greetings[index];
-				greetingElement.classList.remove("fade-out");
-				greetingElement.classList.add("fade-in");
-				index = (index + 1) % greetings.length;
-			}, 1000);
-		}
-
-		changeGreeting();
-		setInterval(changeGreeting, 3000);
-	</script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikathi Martin-Me</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+      integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s;
+      }
+
+      .fade-out {
+        animation: fadeOut 1s;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <section class="py-10 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <nav class="flex items-center justify-between mb-40">
+          <h1
+            class="font-medium text-gray-600 text-lg md:text-2xl uppercase"
+            id="greeting"
+          >
+            Welcome
+          </h1>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1f-wCLh9xpLL5Dvp_hW5wo89MfPGUVuv3"
+            class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500"
+            >Get my CV</a
+          >
+        </nav>
+
+        <div class="text-center">
+          <div class="flex justify-center mb-16">
+            <img
+              src="assets/image/home-img.jpg"
+              alt="Image"
+              class="h-64 w-64 object-cover rounded-full"
+            />
+          </div>
+
+          <h6
+            class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8"
+          >
+            Bikathi Martin
+          </h6>
+
+          <h1 class="font-normal text-gray-900 text-5xl leading-none mb-8">
+            Junior Fullstack Developer (Java, TypeScript)
+          </h1>
+          <h1 class="font-normal text-gray-900 text-4xl leading-none mb-8">
+            Junior Rust Developer
+          </h1>
+
+          <p class="font-normal text-gray-600 text-md md:text-xl mb-16">
+            I create performant and scallable software systems, both on the web,
+            desktop and on the terminal. I love open source software and I am
+            trying to get into gaming. I use Arch btw.
+          </p>
+
+          <!-- <a href="#" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Hire me</a> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+          About Me
+        </h1>
+
+        <p class="font-normal text-gray-500 text-xs md:text-base mb-20">
+          Here's what might interest you about me:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <div
+              class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4"
+            >
+              <i data-feather="terminal"></i>
+            </div>
+
+            <h4 class="font-medium text-gray-700 text-lg mb-4">
+              Programming Languages
+            </h4>
+
+            <p class="font-normal text-gray-500 text-md text-wrap">
+              I use Java (SpringBoot) for backend development, currently moving
+              to NestJS and TypeScript(NuxtJS) for my frontends. I am also a
+              super active and upcoming Rust developer.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <div
+              class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4"
+            >
+              <i data-feather="coffee"></i>
+            </div>
+
+            <h4 class="font-medium text-gray-700 text-lg mb-4">
+              Hobbies & Interests
+            </h4>
+
+            <p class="font-normal text-gray-500 text-md text-wrap">
+              I am an avid watcher of movies and documentaries and have an
+              interest in aviation, computer gaming, Linux and open source
+              contribution.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <div
+              class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4"
+            >
+              <i data-feather="bar-chart-2"></i>
+            </div>
+
+            <h4 class="font-medium text-gray-700 text-lg mb-4">Aspirations</h4>
+
+            <p class="font-normal text-gray-500 text-md text-wrap">
+              To bring value to the world and to you, with my skills, and share
+              knowledge and ideas with people of similar interests, and to say
+              that I use arch btw :)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl">
+          Portfolio
+        </h1>
+      </div>
+    </section>
+    <section class="py-10 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col my-16 justify-between">
+          <div class="mb-10">
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+              Commercial Works
+            </h1>
+
+            <p class="font-normal text-gray-500 text-xs md:text-base">
+              Below are my biggest and favorite works from the corporate world.
+            </p>
+          </div>
+
+          <div class="gap-16 md:gap-24 grid-cols-1 grid md:grid-cols-2">
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">01</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">
+                  Esheria AI Chat
+                </h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  I was involved in the development of an AI platform to help
+                  legal practitioners have a simpler work life. Available at
+                  <a
+                    href="https://chat.esheria.co.ke/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >https://chat.esheria.co.ke/</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">02</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">
+                  AVA Roadside Assistance
+                </h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  AVA is a complex roadside assistance platfrom to help bridge
+                  the gap between clients and services like towing, fuel
+                  delivery, jumpstarting e.t.c. Get the
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.regenttracking.ava"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >Playstore App</a
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">03</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">
+                  Vehicle Valuation System
+                </h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  An complex, AI-charged platform to help with the process of
+                  determining a vehicles value, from booking to report.
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >See the Gallery</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col my-16 justify-between">
+          <div class="mb-10">
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+              Open Source Contributions
+            </h1>
+
+            <p class="font-normal text-gray-500 text-xs md:text-base">
+              Here are some of my open source contributions.
+            </p>
+          </div>
+
+          <div class="gap-16 md:gap-24 grid-cols-1 grid md:grid-cols-2">
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">01</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">
+                  Chrome Ext. Template
+                </h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  Coming from a web development background, I work with browsers
+                  alot. As I was learning to develop Chrome extensions, I
+                  open-sourced and had it merged in a repo full of these
+                  templates. See the PR
+                  <a
+                    href="https://github.com/guocaoyi/create-chrome-ext/pull/110"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >https://github.com/guocaoyi/create-chrome-ext/pull/110</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">02</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">
+                  Typing Speed Test Tool
+                </h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  This is a simple-ish project I wrote to provide a free and
+                  quick tool to help test your typing speed right from inside
+                  your browser. Best part? It's written in Rust (with yew.rs).
+                  Currently under modifications before it is merged into Yew.rs.
+                  Montior the PR at
+                  <a
+                    href="https://github.com/yewstack/yew/pull/3942"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >https://github.com/yewstack/yew/pull/3942</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">02</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">
+                  Floem Calculator UI Concept
+                </h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  Floem is a desktop development framework? written in Rust
+                  lang. While learning about it, I developed a concept UI for a
+                  calculator app in it, and are awaiting its merge into the
+                  official Floem /examples folder. Monitor the PR here:
+                  <a
+                    href="https://github.com/lapce/floem/pull/938"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >https://github.com/lapce/floem/pull/938</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col my-16 justify-between">
+          <div class="mb-10">
+            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+              Personal Projects
+            </h1>
+
+            <p class="font-normal text-gray-500 text-xs md:text-base">
+              Here are some of my personal projects.
+            </p>
+          </div>
+
+          <div class="gap-16 md:gap-24 grid-cols-1 grid md:grid-cols-2">
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">01</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">CN</h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  CN is a free and open source tool to help with bulk renaming
+                  of files and folders from inside the terminal, written in
+                  Rust. See the repo here:
+                  <a
+                    href="https://github.com/bikathi/cn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >https://github.com/bikathi/cn</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-6">
+              <h1 class="font-normal text-gray-700 text-3xl">02</h1>
+
+              <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+              <div>
+                <h1 class="font-normal text-gray-700 text-3xl mb-5">Bred64</h1>
+
+                <p class="font-normal text-gray-500 text-sm md:text-base">
+                  Bred64 is a simple Base64 library written in Rust, and
+                  published on
+                  <a
+                    href="https://crates.io/crates/bred64"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >crates.io</a
+                  >
+                  with roughly 1800 downloads. See the repo here:
+                  <a
+                    href="https://github.com/bikathi/cn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-blue-400 hover:text-blue-500 transition-all ease-in-out duration-300"
+                    >https://github.com/bikathi/cn</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+          Education
+        </h1>
+
+        <p class="font-normal text-gray-500 text-xs md:text-base mb-20">
+          Below is a summary of the places I studied
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <h4 class="font-medium text-gray-700 text-lg mb-4">2006 - 2015</h4>
+
+            <p class="font-normal text-gray-500 text-md mb-4">
+              Primary school education in Kenya, <br />
+              studied at <strong>Infill Academy</strong> and managed <br />
+              to graduate with 389/<sup>500</sup> points in the
+              <br />
+              K.C.P.E exams.
+            </p>
+
+            <div class="relative">
+              <a
+                href="https://www.facebook.com/www.infillacademy.ac.ke/"
+                target="_blank"
+                rel="noopener"
+                class="font-semibold text-gray-500 text-md relative z-10"
+              >
+                See the place here
+              </a>
+              <span
+                class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"
+              ></span>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <h4 class="font-medium text-gray-700 text-lg mb-4">2016 - 2020</h4>
+
+            <p class="font-normal text-gray-500 text-md mb-4">
+              High school education in Kenya, studied in<br />
+              <strong>Kakamega National School (G.A.S.K)</strong>
+              <br />eventually graduating with an A- in the <br />
+              K.C.S.E exams.
+            </p>
+
+            <div class="relative">
+              <a
+                href="https://sites.google.com/view/kakamegahighschool/this-is-g-a-s-k-welcome?authuser=0"
+                target="_blank"
+                rel="noopener"
+                class="font-semibold text-gray-500 text-md relative z-10"
+              >
+                See the place here
+              </a>
+              <span
+                class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"
+              ></span>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <h4 class="font-medium text-gray-700 text-lg mb-4">2020-2024</h4>
+
+            <p class="font-normal text-gray-500 text-md mb-4">
+              Underwent my bachelor's degree program <br />
+              at the <strong>KCA University</strong>, graduating with a Second
+              Class Honours, Upper Division <br />
+              in Software Development.
+            </p>
+
+            <div class="relative">
+              <a
+                href="https://www.kcau.ac.ke/"
+                ref="noopener"
+                class="font-semibold text-gray-500 text-md relative z-10"
+              >
+                See the place here
+              </a>
+              <span
+                class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+          Professional Certifications
+        </h1>
+
+        <p class="font-normal text-gray-500 text-xs md:text-base mb-20">
+          Below is a summary of certificates gained / being worked on
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <h4 class="font-medium text-gray-700 text-lg mb-4">
+              Spring Security Certification
+            </h4>
+            <p class="font-normal text-gray-500 text-md mb-4">
+              A <strong>Udemy-based</strong> course on managing backend<br />
+              system security in Spring. Learnt concepts like
+              <br />
+              JWT, OAuth 2.0, SSO, and more.
+            </p>
+
+            <div class="flex items-center space-x-2">
+              <span class="text-gray-700"><strong>Ongoing</strong></span>
+              <span class="text-gray-300">&VerticalBar;</span>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="font-semibold text-gray-500 text-md relative z-10"
+              >
+                Download Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="text-center">
+          <h1
+            class="font-normal text-gray-300 text-3xl md:text-6xl lg:text-7xl mb-20 md:mb-32 lg:mb-48"
+          >
+            Press on. At times, press play!
+          </h1>
+
+          <p class="font-medium text-gray-700 text-xs md:text-base">
+            In my 3 years of experience, I have used @springboot for backend
+            projects and <br />
+            @vuejs for front-end projects. Today however,
+            <br />
+            I am looking at development with @rust, as I simultaneously make a
+            migration from Spring Boot(Java) <br />
+            to NestJs(TypeScript) for backend development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 md:py-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+          Work Experience
+        </h1>
+
+        <p class="font-normal text-gray-500 text-xs md:text-base mb-20">
+          Below is a summary of the places I have worked at
+        </p>
+
+        <div class="flex flex-col lg:flex-row justify-between">
+          <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+            <h6 class="font-medium text-gray-400 text-base uppercase">
+              Company
+            </h6>
+
+            <p class="font-semibold text-gray-600 text-base">
+              Stone Age Technologies
+              <span class="font-normal text-gray-300">/ Singapore</span>
+            </p>
+
+            <p class="font-semibold text-gray-600 text-base">
+              Stone Age Technologies
+              <span class="font-normal text-gray-300">/ Singapore</span>
+            </p>
+
+            <p class="font-semibold text-gray-600 text-base">
+              Esheria LTD
+              <span class="font-normal text-gray-300">/ Kenya</span>
+            </p>
+
+            <p class="font-semibold text-gray-600 text-base">
+              Regent AutoValuers & Assessors
+              <span class="font-normal text-gray-300">/ Kenya</span>
+            </p>
+          </div>
+
+          <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+            <h6 class="font-medium text-gray-400 text-base uppercase">
+              Position
+            </h6>
+
+            <p class="font-normal text-gray-400 text-base">
+              Intern fullstack developer
+            </p>
+
+            <p class="font-normal text-gray-400 text-base">
+              Junior fullstack developer
+            </p>
+
+            <p class="font-normal text-gray-400 text-base">
+              Junior fullstack developer
+            </p>
+
+            <p class="font-normal text-gray-400 text-base">
+              Fullstack developer
+            </p>
+          </div>
+
+          <div class="space-y-8 md:space-y-16">
+            <h6 class="font-medium text-gray-400 text-base uppercase">Year</h6>
+
+            <p class="font-normal text-gray-400 text-base">2022-2023</p>
+
+            <p class="font-normal text-gray-400 text-base">2023-2024</p>
+
+            <p class="font-normal text-gray-400 text-base">2023-2025</p>
+
+            <p class="font-normal text-gray-400 text-base">2024-Present</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-10 md:py-16 mb-20 md:mb-40 lg::mb-52">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="text-center">
+          <div class="flex items-center justify-center space-x-8">
+            <a
+              href="mailto:martbikathi@gmail.com"
+              class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
+            >
+              <i
+                data-feather="at-sign"
+                class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"
+              ></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/bikathi-martin-665a42261"
+              target="_blank"
+              rel="noopener"
+              class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
+            >
+              <i
+                data-feather="linkedin"
+                class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"
+              ></i>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/21213520/bikathi-martin"
+              target="_blank"
+              rel="noopener"
+              class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
+            >
+              <i
+                data-feather="layers"
+                class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"
+              ></i>
+            </a>
+            <a
+              href="https://medium.com/@martbikathi"
+              target="_blank"
+              rel="noopener"
+              class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
+            >
+              <i
+                data-feather="book-open"
+                class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/bikathi"
+              target="_blank"
+              rel="noopener"
+              class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
+            >
+              <i
+                data-feather="github"
+                class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+
+      const greetings = [
+        "Hello World",
+        "Bonjour le monde",
+        "Hola Mundo",
+        "Hallo Welt",
+      ];
+      let index = 0;
+
+      function changeGreeting() {
+        const greetingElement = document.getElementById("greeting");
+        greetingElement.classList.remove("fade-in");
+        greetingElement.classList.add("fade-out");
+        setTimeout(() => {
+          greetingElement.textContent = greetings[index];
+          greetingElement.classList.remove("fade-out");
+          greetingElement.classList.add("fade-in");
+          index = (index + 1) % greetings.length;
+        }, 1000);
+      }
+
+      changeGreeting();
+      setInterval(changeGreeting, 3000);
+    </script>
+  </body>
 </html>
